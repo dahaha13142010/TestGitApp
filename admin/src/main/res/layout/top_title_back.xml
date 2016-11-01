@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_lay"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/back_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iV_top_back"
+            android:layout_width="30dip"
+            android:layout_height="25dip"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/top_back" />
+
+        <TextView
+            android:id="@+id/leftTitleTv"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@color/cl_white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="15dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_top_right"
+            android:layout_width="30dip"
+            android:layout_height="25dip"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/top_back" />
+
+        <TextView
+            android:id="@+id/rightTitleTv"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@color/cl_white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <com.admin.control.textView.ScrollTextView
+        android:id="@+id/tV_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+</RelativeLayout>

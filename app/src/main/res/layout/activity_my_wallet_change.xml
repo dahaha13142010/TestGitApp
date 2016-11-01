@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@mipmap/login_activity_bg">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerRightTitle="@string/transfer_record"
+        app:headerTitle="@string/my_wallet_transfer"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_transfer_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_account"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/et_transfer_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_transfer_account"
+            android:hint="@string/transfer_account_hint"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_transfer_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_money"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/et_transfer_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/tv_transfer_money"
+            android:hint="@string/transfer_money_hint"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="@string/transfer_money"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/login_bg"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="@string/confirm"/>
+
+
+</LinearLayout>

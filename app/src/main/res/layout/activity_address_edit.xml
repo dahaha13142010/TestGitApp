@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dl_t_top"
+    tools:context=".app.fragment_mall.AddressCreateAndEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.admin.control.topTitleBackBar.TopTitleBackBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:headerBackground="@color/tab_t_tab"
+            app:headerLeftTitle="@string/back"
+            app:headerRightImageVisibility="gone"
+            app:headerTitle="@string/address_edit" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/address_shr"
+                android:textColor="@color/text_g"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_shr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_1"
+                android:singleLine="true"
+                android:textColor="@color/text_b_d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/address_lxfs"
+                android:textColor="@color/text_g"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_2"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/text_b_d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/address_add_details"
+                android:textColor="@color/text_g"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_address_add_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_3"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/text_b_d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/address_set_default"
+                android:textColor="@color/text_g"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cb_set_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/address_check_box"
+                android:button="@null"
+                android:singleLine="true"
+                android:textColor="@color/text_b_d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="55dp"
+        android:background="@mipmap/login_bg"
+        android:text="@string/address_save_use"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/pr_bg_main"
+    tools:context=".app.fragment_home.FkmActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/fkm"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fkm_t_1"
+            android:textColor="@color/t_black"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fkm_t_2"
+            android:textSize="20sp"
+            android:textColor="@color/tab_t_tab"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/fkm"/>
+
+</LinearLayout>

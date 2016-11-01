@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_activity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.main.my_wallet.SplitDetailsActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/split_record_title" />
+
+    <TextView
+        android:id="@+id/tv_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/split_record_hint"
+        android:textSize="11sp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dl_t_top"
+            android:padding="10dp"
+            tools:listitem="@layout/item_transfer_record" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

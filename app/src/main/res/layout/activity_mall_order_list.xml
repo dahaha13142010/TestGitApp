@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_activity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.fragment_mall.OrderListActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/ma_my_order" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_order_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/forget_rbtn_sel"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/order_all"
+            android:textColor="@color/tab_t_tab" />
+
+        <RadioButton
+            android:id="@+id/rbtn_order_wait_delivery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/forget_rbtn_sel"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/order_not_complete"
+            android:textColor="@color/tab_t_tab" />
+
+        <RadioButton
+            android:id="@+id/rbtn_order_wait_receipt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/forget_rbtn_sel"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/order_completed"
+            android:textColor="@color/tab_t_tab" />
+
+        <RadioButton
+            android:id="@+id/rbtn_order_wait_evaluate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/forget_rbtn_sel"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/order_canceled"
+            android:textColor="@color/tab_t_tab" />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ma_text_gray"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dl_t_top"
+            android:padding="10dp"
+            tools:listitem="@layout/item_order_list_wait_obligation" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

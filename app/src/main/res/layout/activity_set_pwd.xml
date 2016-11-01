@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_activity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.activity_login_etc.LoginActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/pay_pwd" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/tv_phone_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/pay_pwd_"
+            android:textColor="@color/hint_login"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_pad_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_phone_2"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_pay_pwd"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#6a6a6f" />
+
+    <RelativeLayout
+        android:id="@+id/rl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/pay_pwd_repeat"
+            android:textColor="@color/hint_login"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_pay_pwd_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_get_yzm"
+            android:layout_toRightOf="@id/tv_yzm"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_pay_pwd_repeat"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#6a6a6f" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@mipmap/login_bg"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

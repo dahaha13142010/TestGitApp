@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@mipmap/login_activity_bg"
+    tools:context=".app.activity_login_etc.LoginActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/regist_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/tv_get_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_yzm"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tab_t_tab"
+            android:textSize="18sp"/>
+
+
+        <!--android:layout_toLeftOf="@id/tv_get_yzm"-->
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_get_yzm"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:hint="@string/hint_phone"
+            android:textColorHint="@color/hint_login"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_height="1dp"
+        android:background="#6a6a6f"/>
+    <EditText
+        android:id="@+id/et_yzm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/hint_yzm"
+        android:textColorHint="@color/hint_login"
+        android:background="@android:color/transparent" />
+    <View
+        android:layout_below="@id/et_yzm"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_height="1dp"
+        android:background="#6a6a6f"/>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@mipmap/login_bg"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

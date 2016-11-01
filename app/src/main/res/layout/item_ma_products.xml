@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_production"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_g" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        tools:text="已入账" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ma_text_orange"
+            android:layout_centerVertical="true"
+            tools:text="已入账" />
+
+        <Button
+            android:id="@+id/btn_add_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pr_sharp_btn_l"
+            android:text="@string/ma_add_to_cart"
+            android:textColor="@color/ma_text_orange"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

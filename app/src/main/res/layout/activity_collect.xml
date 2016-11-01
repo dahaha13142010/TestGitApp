@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pr_bg_main"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.fragment_promotion.ShareEwmActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/collect_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_ways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:drawableTop="@mipmap/icon_qq_wallet"
+            android:text="@string/qq_pay"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:drawableTop="@mipmap/icon_alipay"
+            android:text="@string/alipay"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:drawableTop="@mipmap/icon_wechat_pay"
+            android:text="@string/wechat_pay"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:drawableTop="@mipmap/icon_jd_pay"
+            android:text="@string/jd_pay"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:drawableTop="@mipmap/icon_easy_fubao"
+            android:text="@string/easy_fubao"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:drawableTop="@mipmap/icon_baifubao"
+            android:text="@string/baifubao"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/icon_union_pay"
+            android:text="@string/union_pay"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/numbers_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_number_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/number_bg"
+                android:src="@mipmap/number_7" />
+            <ImageView
+                android:id="@+id/iv_number_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/number_bg"
+                android:src="@mipmap/number_8" />
+            <ImageView
+                android:id="@+id/iv_number_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/number_bg"
+                android:src="@mipmap/number_9" />
+            <ImageView
+                android:id="@+id/iv_number_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/number_bg"
+                android:src="@mipmap/number_delete" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_number_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/number_bg"
+                        android:src="@mipmap/number_4" />
+                    <ImageView
+                        android:id="@+id/iv_number_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/number_bg"
+                        android:src="@mipmap/number_5" />
+                    <ImageView
+                        android:id="@+id/iv_number_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/number_bg"
+                        android:src="@mipmap/number_6" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_number_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/number_bg"
+                        android:src="@mipmap/number_1" />
+                    <ImageView
+                        android:id="@+id/iv_number_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/number_bg"
+                        android:src="@mipmap/number_2" />
+                    <ImageView
+                        android:id="@+id/iv_number_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/number_bg"
+                        android:src="@mipmap/number_3" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_number_0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="2"
+                        android:background="@color/number_bg"
+                        android:src="@mipmap/number_0" />
+                    <ImageView
+                        android:id="@+id/iv_number_point"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/number_bg"
+                        android:src="@mipmap/number_point" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_number_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:background="@color/number_confirm_bg"
+                android:src="@mipmap/number_confirm" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_number"
+        android:layout_below="@id/ll_ways"
+        android:background="@color/number_result_bg"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_finger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/number_finger" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_finger"
+            android:layout_below="@id/iv_finger"
+            android:text="@string/collect_roll"
+            android:textColor="@color/text_number_t_roll"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/collect_rmb"
+            android:textColor="@color/text_number_t_roll"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_rmb"
+            android:layout_marginRight="5dp"
+            android:text="0"
+            android:textColor="@color/text_number_t_roll"
+            android:textSize="35sp" />
+    </RelativeLayout>
+</RelativeLayout>

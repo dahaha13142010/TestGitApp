@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--tab-->
+    <color name="tab_t_tab">#fbaa27</color>
+    <!--<color name="tab_t_tab">#6c4a9e</color>-->
+    <color name="tab_t_tab_n">#c3c3c3</color>
+
+    <!--DrawerLayout-->
+    <color name="dl_t_top">#f7f7f7</color>
+    <color name="dl_t_w">#ffffff</color>
+    <color name="dl_t_g">#d8d8d8</color>
+    <color name="dl_t_y">#e7ab39</color>
+    <!--<color name="dl_t_y">#f8d756</color>-->
+    <color name="hint_login">#b3b3b3</color>
+    <color name="dl_divider">#9f8c7d</color>
+    <!--<color name="dl_divider">#77758b</color>-->
+    <color name="dl_bg">#51433a</color>
+    <!--<color name="dl_bg">#353349</color>-->
+    <color name="dl_item_bg">#614c3b</color>
+    <!--<color name="dl_item_bg">#3b3951</color>-->
+
+    <!--homeFragment-->
+    <color name="h_t_title">#fefefe</color>
+
+    <!--promotionFragment-->
+    <color name="pr_t_blue">#4d89ff</color>
+    <color name="pr_bg_main">#f7f7f7</color>
+    <color name="pr_tv_bg_1">#dda83f</color>
+    <color name="pr_tv_bg_2">#cc6633</color>
+    <color name="pr_tv_bg_3">#cc9966</color>
+    <color name="t_black">#646464</color>
+
+    <!--promotionFragment-->
+    <color name="text_b_g">#494949</color>
+    <color name="text_b_d">#242424</color>
+    <color name="text_g">#acacac</color>
+    <color name="text_g_d">#999999</color>
+
+    <!--CollectActivity-->
+    <color name="number_bg">#a8a8a8</color>
+    <color name="numbers_bg">#757575</color>
+    <color name="number_confirm_bg">#6e6e6e</color>
+    <color name="number_result_bg">#313131</color>
+    <color name="text_number_t_roll">#cecece</color>
+
+    <!--QR-->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#60000000</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#60000000</color>
+    <color name="result_view">#ffffffff</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="qr_code_view_mask">#60000000</color>
+    <color name="qr_code_view_corner">#FF2A7C3B</color>
+    <color name="qr_code_view_border">#ffffffff</color>
+    <color name="my_split_bg">#f9f3ff</color>
+
+    <!-- MyWalletActivity -->
+    <color name="my_wallet_division">#b6b6b6</color>
+
+    <!-- OrderListActivity -->
+    <color name="ma_text_gray">#7d7d7d</color>
+    <color name="ma_text_orange">#faaa26</color>
+    <color name="line">#E4E4E4</color>
+    <color name="add_shoppingCart_background">#F9A926</color>
+    <color name="buy_shop_background">#F06128</color>
+</resources>

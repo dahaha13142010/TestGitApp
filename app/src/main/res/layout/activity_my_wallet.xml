@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_activity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.main.my_wallet.MyWalletActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/my_wallet" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/tab_t_tab">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="18dp"
+            android:text="0.01"
+            android:textColor="@android:color/white"
+            android:textSize="50sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/my_wallet_balance"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/my_split_bg">
+        <TextView
+            android:id="@+id/tv_split_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/my_wallet_balance"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_g"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/tv_split_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_wallet_split_details"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tab_t_tab"
+            android:layout_toRightOf="@id/tv_split_total"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_login_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_margin="8dp"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/my_wallet_transfer"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/my_wallet_division"/>
+        <RadioButton
+            android:id="@+id/rbtn_pay_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/my_wallet_withdraw"
+            android:textSize="20sp" />
+    </RadioGroup>
+</LinearLayout>

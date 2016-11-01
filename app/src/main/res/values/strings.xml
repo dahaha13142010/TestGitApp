@@ -1,0 +1,254 @@
+<resources>
+    <string name="app_name">通亿付</string>
+    <!-- main -->
+    <string name="no_level">当前等级：——</string>
+    <string name="not_login">未登录</string>
+    <string name="cumulative_collection">累计收款</string>
+    <string name="my_wallet">我的钱包</string>
+
+    <string name="bank_account">银行账户</string>
+    <string name="unverified">（未验证）</string>
+    <string name="activate">商户激活</string>
+    <string name="unactivated">（未激活）</string>
+    <string name="my_promotion">我的推广</string>
+    <string name="my_message">我的消息</string>
+
+    <string name="guide">使用指南</string>
+    <string name="customer_services">联系客服</string>
+    <string name="services_phone">023-88888888</string>
+    <string name="feedback">意见反馈</string>
+
+    <string name="logout">退出登录</string>
+
+    <!--导航-->
+    <string name="homepage">首页</string>
+    <string name="phone">电话</string>
+    <string name="mall">商城</string>
+    <string name="promotion">推广</string>
+
+    <!--HomeFragment-->
+    <string name="fkm">付款码</string>
+    <string name="scan">扫一扫</string>
+    <string name="search">搜索</string>
+
+    <!--HomeFragment-->
+    <string name="fkm_t_1">通亿付扫一扫，</string>
+    <string name="fkm_t_2">向我付款</string>
+
+    <!--Home_rv-->
+    <string name="home_proceeds">收款</string>
+    <string name="home_bill">账单</string>
+    <string name="home_wallet">钱包</string>
+    <string name="home_shop">个人店铺</string>
+    <string name="home_card">我要办卡</string>
+    <string name="home_loan">我要贷款</string>
+
+    <!--LoginActivity-->
+    <string name="hint_account">请输入已注册的账号</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="login">登\t\t录</string>
+    <string name="register">注册</string>
+    <string name="forget">忘记密码</string>
+
+    <!--RegisterActivity-->
+    <string name="regist_title">注\t\t册</string>
+    <string name="hint_phone">请输入手机号</string>
+    <string name="hint_yzm">请输入验证码</string>
+    <string name="get_yzm">| 获得验证码</string>
+    <string name="next_step">下一步</string>
+    <string name="reg_psd_login">登陆密码：</string>
+    <string name="reg_psd_confirm">重复密码：</string>
+    <string name="reg_recommend">推荐号码：</string>
+    <string name="reg_psd_login_hint">不少于6位字母或数字组合</string>
+    <string name="reg_psd_confirm_hint">请再次输入登录密码</string>
+    <string name="reg_recommend_hint">请输入推荐人手机号或商户推荐码</string>
+    <string name="reg_succeed">恭喜您注册成功！</string>
+    <string name="reg_succeed_next">\t\t请继续完善您的银行卡账户信息，否则将不能进行收款、提现、结算等操作。</string>
+    <string name="cancel">取\t\t消</string>
+    <string name="reg_continue">继\t\t续</string>
+
+    <!--BindBankActivity-->
+    <string name="binding_title">银行卡账户</string>
+    <string name="bd_account">注册账号</string>
+    <string name="bd_hint">\t请正确填写真实信息，否则结算不能及时到账；资料审核大约需要1个工作日，请耐心等候！如有任何疑问，请联系023-88888888</string>
+    <string name="bd_audit_ing">您的银行卡账户资料处于验证中</string>
+    <string name="bd_audit_yes">您的银行卡账户资料已成功验证</string>
+    <string name="bd_modify">修\t改</string>
+    <string name="bd_name">持卡人姓名</string>
+    <string name="bd_id_card_number">身份证号码</string>
+    <string name="bd_bank_card_number">银行卡卡号</string>
+    <string name="bd_bank_number_repeat">重复银行卡卡号</string>
+    <string name="bd_bank">开户行</string>
+
+    <!--BankCommitSucceedActivity-->
+    <string name="bd_committed">资料已提交！</string>
+    <string name="bd_committed_hint">\t\t银行卡账户资料已经提交，审核大约需要1天时间，期间不能进行提现/结算等操作；审核结果可以进入“我的”→“我的资料”进行查看。如有任何疑问，请联系客服：023-88888888。</string>
+    <string name="known">我知道了</string>
+
+    <!--ShareEwmActivity-->
+    <string name="share_title">分享二维码</string>
+    <string name="share_t_h">合伙人招募中\n挑战百万财富</string>
+    <string name="share_t_h2">共享亿万平台，共享亿万财富</string>
+
+    <string name="qq_pay">QQ钱包</string>
+    <string name="alipay">支付宝</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="jd_pay">京东钱包</string>
+    <string name="easy_fubao">易付宝</string>
+    <string name="baifubao">百度钱包</string>
+    <string name="union_pay">银联支付</string>
+
+    <string name="share_t_h3">想要富，做支付</string>
+    <string name="share_t_h4">微信内&lt;长按二维码&gt;识别途中的二维码</string>
+
+    <!--CollectActivity-->
+    <string name="collect_title">收款</string>
+    <string name="collect_roll">左右滑动选择收款渠道</string>
+    <string name="collect_rmb">人民币/￥</string>
+
+    <!--SetPwdActivity-->
+    <string name="pay_pwd_">支付密码：</string>
+    <string name="login_pwd_">登录密码：</string>
+    <string name="reset_confirm">确认修改</string>
+    <string name="pay_pwd_repeat">重复密码：</string>
+    <string name="hint_pay_pwd">请输入支付密码</string>
+    <string name="hint_pay_pwd_repeat">请再次输入支付密码</string>
+
+    <!--ForgetPwdActivity-->
+    <string name="login_pwd">登录密码</string>
+    <string name="pay_pwd">支付密码</string>
+    <string name="confirm">确定</string>
+    <string name="for_phone">手机号：</string>
+    <string name="for_yzm">验证码：</string>
+
+    <!--PhoneFragment-->
+    <string name="phone_title">\t\t</string>
+    <string name="no_page">正在建设中...</string>
+    <string name="back">返回</string>
+
+    <!--PromotionFragment-->
+    <string name="promotion_title">推\t\t广</string>
+    <string name="pr_level_up">升级</string>
+    <string name="pr_level_rule">升级收益规则</string>
+    <string name="pr_year_income">商务年收益分析</string>
+    <string name="pr_partner_join">合伙人加盟</string>
+
+    <!--MallFragment-->
+    <string name="mall_title">商\t\t城</string>
+    <string name="ma_goods_category">商品分类</string>
+    <string name="ma_goods_details">商品详情</string>
+    <string name="ma_split_rule">分润规则</string>
+    <string name="ma_split_record">分润记录</string>
+    <string name="ma_add_to_cart">加入购物车</string>
+    <string name="ma_buy_now">立即购买</string>
+
+    <!--AddressActivity-->
+    <string name="address">收货地址</string>
+    <string name="address_edit">编辑收货地址</string>
+    <string name="address_add">添加收货地址</string>
+    <string name="address_shr">收货人</string>
+    <string name="address_lxfs">联系方式：</string>
+    <string name="address_add_details">详细地址：</string>
+    <string name="address_set_default">设置为默认地址</string>
+    <string name="address_save_use">保存并使用</string>
+    <string name="address_btn_delete">删除</string>
+    <string name="address_btn_edit">编辑</string>
+
+    <!--OrderListActivity-->
+    <string name="ma_my_order">我的订单</string>
+    <string name="order_all">全部</string>
+    <string name="order_obligation">待付款</string>
+    <string name="order_not_complete">未完成</string>
+    <string name="order_completed">已完成</string>
+    <string name="order_canceled">已取消</string>
+
+    <string name="ma_order_item_pay_soon">请尽快支付</string>
+    <string name="ma_order_item_order_close">已关闭</string>
+    <string name="ma_order_item_pay_done">买家已付款</string>
+    <string name="ma_order_item_post_done">买家已发货</string>
+    <string name="ma_order_item_order_complete">交易成功</string>
+
+    <string name="ma_order_item_total_money">合计：</string>
+
+    <string name="ma_order_item_pay_now">立即支付</string>
+    <string name="ma_order_item_see_progress">查看进度</string>
+    <string name="ma_order_item_order_cancel">取消订单</string>
+    <string name="ma_order_item_remind_post">提醒发货</string>
+    <string name="ma_order_item_receipt_confirm">确认收货</string>
+    <string name="ma_order_item_evaluate">评价</string>
+
+    <!--OrderDetailsActivity-->
+    <string name="ma_order_fill">订单填写</string>
+    <string name="ma_order_pay_way">支付方式：</string>
+    <string name="ma_order_pay_online">在线支付</string>
+    <string name="ma_order_pay_wallet">钱包支付</string>
+    <string name="ma_order_production_price">商品金额：</string>
+    <string name="ma_order_production_freight">运费</string>
+    <string name="ma_order_commit">提交订单</string>
+
+    <!--QR-->
+    <string name="default_desc">将取景框对准码区，即可自动扫描</string>
+    <string name="action_photo_desc">相册</string>
+    <string name="action_light_on_desc">开灯</string>
+    <string name="action_light_off_desc">关灯</string>
+    <string name="action_produce_desc">创建二维码</string>
+    <string name="label_format">格式:{format}</string>
+    <string name="label_meta">元数据:{meta}</string>
+    <string name="label_code_value">https://www.google.com</string>
+    <string name="label_time">时间:{time}</string>
+    <string name="label_type">类型:{type}</string>
+
+    <!--MyWalletActivity-->
+    <string name="my_wallet_balance">账户余额（元）</string>
+    <string name="my_wallet_split_details">分润明细</string>
+    <string name="my_wallet_transfer">转账</string>
+    <string name="my_wallet_withdraw">提现</string>
+
+    <!--ActivateActivity-->
+    <string name="activate_title">商户激活</string>
+    <string name="activate_n">未激活</string>
+    <string name="activate_y">已激活</string>
+    <string name="activate_y_text">系统检测到你有一张未使用的激活卡！\n点击卡片即可激活账户</string>
+    <string name="activate_n_text">系统检测到你没有未使用的激活卡！</string>
+
+    <!--SplitDetailsActivity-->
+    <string name="split_record_title">累计分润</string>
+    <string name="split_record_hint">提示：交易产生的分润要大于0.01元才能打款，请用户谅解！</string>
+
+    <!--TransferActivity-->
+    <string name="transfer_record">转账记录</string>
+    <string name="transfer_account">转账账户：</string>
+    <string name="transfer_account_hint">请输入对方账户号码</string>
+    <string name="transfer_money">转账金额：</string>
+    <string name="transfer_money_hint">请输入转账金额</string>
+
+    <!--WithdrawActivity-->
+    <string name="withdraw_record">提现记录</string>
+    <string name="withdraw_money">转出金额：</string>
+    <string name="withdraw_money_hint">请输入提现金额</string>
+
+    <!--MyPromotionActivity-->
+    <string name="my_promotion_hint">提示：由于涉及商户隐私问题，您只能看到您的直接推广的直属用户</string>
+    <string name="my_promotion_clerk">店员</string>
+    <string name="my_promotion_shopowner">店长</string>
+    <string name="my_promotion_boss">老板</string>
+    <string name="my_promotion_warning">注：只有状态为“激活”的才是有效推广，才能纳入升级统计</string>
+
+    <!--MessageActivity-->
+    <string name="message">消息</string>
+
+    <string name="product_feature">产品特色</string>
+    <string name="add_shoppingCart">加入购物车</string>
+    <string name="buy_shop">立即购买</string>
+    <string name="qq_chat">QQ交谈\n8:00-18:00</string>
+    <string name="tel_phone">400-889-8188\n8:00-16:00</string>
+    <string name="hot_question">热门问题</string>
+    <string name="pay_question">支付问题</string>
+    <string name="balance_question">余额问题</string>
+    <string name="activity_question">激活问题</string>
+    <string name="profit_question">分润问题</string>
+    <string name="join_question">加盟问题</string>
+    <string name="else_question">其他问题</string>
+    <string name="address_default">默认地址</string>
+
+</resources>

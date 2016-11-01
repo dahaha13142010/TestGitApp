@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            //是否运行混淆,新版本是ninifyEnabled不再是runproguard
+            minifyEnabled false
+            zipAlignEnabled true
+            //加载默认混淆配置文件及自定义混淆 配置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12+'
+    compile 'com.android.support:support-v4:23.2.0+'
+    compile 'com.android.support:support-v13:23.2.0+'
+    compile 'com.android.support:appcompat-v7:23.2.0+'
+    compile 'com.android.support:recyclerview-v7:23.2.0+'
+    compile 'com.nineoldandroids:library:2.4.0+'
+    compile 'com.android.support:design:23.2.0+'
+
+    //网络图片处理
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2+'
+    //FastJson
+    compile 'com.alibaba:fastjson:1.2.8+'
+    //gson解析
+    compile 'com.google.code.gson:gson:2.4+'
+    //注解
+    compile 'com.jakewharton:butterknife:7.0.1+'
+    //图片加载
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5+'
+    //网络请求
+    compile 'com.zhy:okhttputils:2.0.2+'
+}

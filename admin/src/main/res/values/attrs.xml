@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AbSlidingButtonStyle">
+        <attr name="btnBottom" format="integer|reference" />
+        <attr name="btnFrame" format="integer|reference" />
+        <attr name="btnMask" format="integer|reference" />
+        <attr name="btnUnpressed" format="integer|reference" />
+        <attr name="btnPressed" format="integer|reference" />
+    </declare-styleable>
+</resources>

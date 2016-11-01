@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pr_bg_main"
+    android:orientation="vertical">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftImage="@mipmap/top_back"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/ma_goods_details" />
+
+    <LinearLayout
+        android:id="@+id/details_tools"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/add_shoppingCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/add_shoppingCart_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/add_shoppingCart"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/buy_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buy_shop_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/buy_shop"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/details_tools"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.admin.control.ab.AbSlidingPlayView
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="450px"
+                android:layout_weight="1"
+                android:background="#50fefefe" />
+
+            <TextView
+                android:id="@+id/shop_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="22px"
+                android:lines="2"
+                android:gravity="center_vertical"
+                android:minHeight="115px"
+                android:padding="22px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="238px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shop_introduce"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:lineSpacingExtra="22px"
+                    android:padding="22px"
+                    android:ellipsize="end"
+                    android:lines="5"
+                    android:textColor="@color/t_black"
+                    android:textSize="24px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="22px"
+                    android:layout_marginTop="22px"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:id="@+id/shop_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/ma_text_orange"
+                    android:textSize="34px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

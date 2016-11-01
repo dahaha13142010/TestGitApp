@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_activity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.activity_login_etc.ForgetPwdActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/forget" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_login_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/forget_rbtn_sel"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/login_pwd"
+            android:textColor="@color/tab_t_tab"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_pay_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/forget_rbtn_sel"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/pay_pwd"
+            android:textColor="@color/tab_t_tab"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/tv_phone_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/for_phone"
+            android:textColor="@color/hint_login"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_toRightOf="@id/tv_phone_2"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_phone"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#6a6a6f" />
+
+    <RelativeLayout
+        android:id="@+id/rl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/for_yzm"
+            android:textColor="@color/hint_login"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_get_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/get_yzm"
+            android:textColor="@color/tab_t_tab"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/et_yzm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_get_yzm"
+            android:layout_toRightOf="@id/tv_yzm"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_yzm"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#6a6a6f" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@mipmap/login_bg"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dl_t_top"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.main.bank.BindBankActivity">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/binding_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bd_account"
+            android:textColor="@color/text_b_g"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/delete" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/iv_delete"
+            android:textColor="@color/text_b_g"
+            android:textSize="18sp"
+            tools:text="@string/reg_psd_login" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:text="@string/bd_hint"
+        android:textColor="@color/text_g"
+        android:gravity="center_vertical"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bd_name"
+            android:textColor="@color/text_b_d"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_1"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_b_d"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bd_id_card_number"
+            android:textColor="@color/text_b_d"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_id_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_toRightOf="@id/tv_2"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_b_d"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bd_bank_card_number"
+            android:textColor="@color/text_b_d"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_bank_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_toRightOf="@id/tv_3"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_b_d"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bd_bank_number_repeat"
+            android:textColor="@color/text_b_d"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_bank_number_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_toRightOf="@id/tv_4"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_b_d"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bd_bank"
+            android:textColor="@color/text_b_d"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_5"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_b_d"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_login" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/pr_sharp_btn_l"
+        android:text="@string/next_step"
+        android:textColor="@color/tab_t_tab"
+        android:textSize="20sp" />
+
+</LinearLayout>

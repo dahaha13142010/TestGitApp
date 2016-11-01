@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tv_order_statue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="@string/ma_order_item_pay_soon"
+        android:textColor="@color/text_g" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_g" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+
+            android:id="@+id/ll_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_b_g"
+                android:textSize="18sp"
+                tools:text="@string/ma_order_item_total_money" />
+
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_price"
+                tools:text="已入账" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/tab_t_tab"
+                tools:text="已入账" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@mipmap/add_bg"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/tv_add"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/tv_number"
+                    android:background="@mipmap/add_bg"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_g" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ma_order_production_price" />
+
+        <TextView
+            android:id="@+id/tv_price_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="aslkdfjalskdfj" />
+    </RelativeLayout>
+
+</LinearLayout>

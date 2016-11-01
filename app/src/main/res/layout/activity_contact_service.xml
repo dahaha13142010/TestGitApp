@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pr_bg_main"
+    android:orientation="vertical">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/tab_t_tab"
+        app:headerLeftImage="@mipmap/arrow_left"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/customer_services" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="13.2dp"
+        android:paddingTop="10.8dp">
+
+        <TextView
+            android:id="@+id/contact_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58.4dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="5.6dp"
+            android:drawableTop="@mipmap/btn_qq"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/qq_chat"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/contact_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="58.4dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="5.6dp"
+            android:drawableTop="@mipmap/btn_tel"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/tel_phone"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="9.6dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="12dp"
+        android:text="@string/hot_question"
+        android:textColor="@color/text_b_g" />
+
+    <TextView
+        android:id="@+id/pay_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableRight="@mipmap/more"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/pay_question" />
+
+    <TextView
+        android:id="@+id/balance_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableRight="@mipmap/more"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/balance_question" />
+
+    <TextView
+        android:id="@+id/activity_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableRight="@mipmap/more"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/activity_question" />
+
+    <TextView
+        android:id="@+id/profit_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableRight="@mipmap/more"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/profit_question" />
+
+    <TextView
+        android:id="@+id/join_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableRight="@mipmap/more"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/join_question" />
+
+    <TextView
+        android:id="@+id/else_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableRight="@mipmap/more"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/else_question" />
+
+</LinearLayout>
